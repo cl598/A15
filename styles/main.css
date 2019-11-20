@@ -1,0 +1,262 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a:hover{
+	font-style: italic;
+}
+.shadow{
+	text-shadow: 1px 1px #800000;
+}
+
+html {
+	background-color: white;
+}
+
+#mobile_menu{
+	display: none;
+}
+
+/* the styles for the media query */
+@media only screen and (max-width: 959px){
+	section h1{
+		font-size: 135%;
+	}
+
+	section h2{
+		font-size: 120%;
+	}
+
+	aside h2{
+		font-size: 120%;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	header img {
+		float: none;
+	}
+
+	header{
+		text-align: center;
+	}
+
+	section{
+		float: none;
+		width: 95%;
+	}
+
+	aside{
+		float: none;
+		padding-right: 2.5%;
+		width: 95%;
+	}
+
+	#nav_menu{
+		display: none;
+	}
+
+	#mobile_menu{
+		display: block;
+	}
+
+	.slicknav_menu{
+		background-color: #800000 !important;
+	}
+
+	#speak{
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+}
+
+@media only screen and (max-width: 479px){
+	body{
+		font-size: 90%;
+	}
+}
+
+/* the styles for the elements */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	width: 99%;
+	max-width: 960px;
+	margin: 0 auto 0 auto;
+	border: 3px solid #931420;
+	background-color: #fffded;
+}
+
+header{
+	border-bottom: 3px solid #800000;
+	padding: 1.5em 30px 2em 30px;
+	background-image: linear-gradient(30deg, #f6bb73 0%, #f6bb73 0%, white 50%, #f6bb73 100%, #f6bb73 100%);
+}
+
+/* the styles for the header */
+header img {
+	float: left;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+header h2{
+	font-size: 170%;
+	color: #800000;
+	padding: 0 0 0 100px;
+}
+
+header h3{
+	font-size: 130%;
+	font-style: italic;
+	padding: 0 0 0 100px;
+}
+
+/* the styles for the main navigation bar */
+#nav_menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#nav_menu ul li{
+	float: left;
+	width: 20%;
+}
+
+#nav_menu ul li a{
+	display: block;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+}
+
+#nav_menu ul li a.current{
+	color: yellow;
+}
+
+/* the styles for the submenu */
+#nav_menu ul ul{
+	width: 100%;
+	display: none;
+	position: absolute;
+}
+
+#nav_menu ul ul li{
+	float: none;
+}
+
+#nav_menu ul li:hover ul{
+	display: block;
+}
+
+#nav_menu ul::after{
+	clear: both;
+	display: block;
+}
+
+/* the styles for the section */
+main{
+	clear: left;
+}
+
+section{
+	width: 65.625%;
+	float: right;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	padding-bottom: 20px;
+}
+
+section h1{
+	font-size: 150%;
+	padding-top: .5em;
+	padding-bottom: .25em;
+	margin: 0;
+}
+
+section li{
+	list-style: circle;
+}
+
+/* the styles for article */
+article{
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+
+article h2 {
+	padding-top: 0;
+}
+
+article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+article img{
+	float: right;
+	margin: 5px;
+	border: 1px solid black;
+	max-width: 40%;
+	min-width: 150px;
+}
+
+/* the styles for main */
+
+aside{
+	width: 26.875%;
+	float: right;
+	padding-left: 2.5%;
+	padding-bottom: 20px;
+}
+
+aside img{
+	padding-bottom: 1em;
+}
+
+aside h3{
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+main h2{
+	font-size: 130%;
+	color: #800000;
+	padding: .5em 0 .25em;
+}
+
+main p{
+	padding: 0 0 .5em 0;
+	text-align: left;
+}
+
+main blockquote{
+	padding: 0 2em 0 2em;
+}
+
+main ul{
+	padding: 0 0 .25em 1.25em;
+}
+
+main li{
+	padding: 0 0 .35em 0;
+}
+
+/* the styles for the footer */
+footer p{
+	text-align: center;
+	background-color: #800000;
+	color: white;
+	padding: 1em 0;
+	clear: both;
+}
